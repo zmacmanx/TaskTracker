@@ -1,5 +1,40 @@
-<header>header</header>
+<header>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-success">
+      <a class="navbar-brand" routerLink="/">
+          <img src="assets/img/SHIServices_Clear.png" alt="SHI Services" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#imNavContent"
+              aria-controls="imNavContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="imNavContent">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                  <a routerLink="" class="nav-link">
+                      My Items
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a routerLink="/system" class="nav-link">
+                      Systems
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a routerLink="/script" class="nav-link">
+                      Scripts
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</header>
 
 <router-outlet></router-outlet>
 
-<footer>footer</footer>
+<footer class="bg-success text-center text-white">
+  <p>
+      For internal use only.
+      <br />
+      ©&nbsp;{{currentYear}}&nbsp;SHI International. All rights reserved.
+  </p>
+</footer>
